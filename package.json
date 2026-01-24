@@ -1,0 +1,21 @@
+{
+  "name": "grid-design-landing-page",
+  "version": "1.0.0",
+  "description": "Modern responsive landing page for Grid design solutions",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server -c bs-config.json",
+    "dev": "lite-server -c bs-config.json"
+  },
+  "keywords": [
+    "landing-page",
+    "responsive",
+    "css-grid",
+    "bootstrap"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
