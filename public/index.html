@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid - Design Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="#" class="nav__logo">
+          <img src="assets/images/icon-layout.svg" alt="Grid Logo" class="nav__logo-icon">
+          <span class="nav__logo-text">Grid</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#how-it-works" class="nav__link">How it works</a></li>
+          <li><span class="nav__separator"></span></li>
+          <li><a href="#who-we-are" class="nav__link">Who we are</a></li>
+          <li><span class="nav__separator"></span></li>
+          <li><a href="#what-we-do" class="nav__link">What we do</a></li>
+          <li><span class="nav__separator"></span></li>
+          <li><a href="#contact" class="nav__link">Contact us</a></li>
+        </ul>
+        <button class="nav__btn">Sign In</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__container">
+      <!-- DESKTOP HEADER -->
+      <div class="hero__header desktop-only">
+        <h1 class="hero__title">
+          Combine <span class="hero__title-highlight">fine</span> images
+        </h1>
+        <p class="hero__subtitle">To represent a product</p>
+        <div class="hero__scroll-down">
+          <div class="hero__scroll-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE HEADER -->
+      <div class="hero__header mobile-only">
+        <h1 class="hero__title">
+          <div class="hero__title-top">Combine</div>
+          <div class="hero__title-bottom">
+            <span class="hero__title-highlight hero__title-highlight--mobile">Cool</span> images
+          </div>
+        </h1>
+        <p class="hero__subtitle">To create any grid by<br>scaling and resizing</p>
+        <div class="hero__scroll-down">
+          <div class="hero__scroll-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__left desktop-only">
+          <p class="hero__description">
+            Use mixed grid with imagery, replace with your own photos and descriptions.
+          </p>
+
+          <div class="hero__image-card">
+            <div class="hero__image-content">
+              <img src="assets/images/Card 7.svg" alt="Card 7" class="hero__image-graphic">
+            </div>
+          </div>
+
+          <button class="hero__cta">Learn more</button>
+        </div>
+
+        <!-- DESKTOP GRID -->
+        <div class="hero__grid desktop-only">
+          <!-- Top Row: Man Workspace Card (spans 3 cols) -->
+          <div class="grid-card grid-card--man">
+            <img src="assets/images/Card 1.svg" alt="Workspace" class="grid-card__img">
+            <div class="grid-card__overlay">
+             
+            </div>
+          </div>
+
+          <!-- Top Right: Text Info -->
+          <div class="grid-card grid-card--text-info">
+            <p class="grid-card__paragraph">
+              This is multipurpose grid, it fits for portfolio, services or agency web site
+            </p>
+          </div>
+
+          <!-- Middle Row Right: Letter A and Shoe -->
+          <div class="grid-card grid-card--letter-a">
+            <img src="assets/images/Card 6.svg" alt="Letter A" class="grid-card__img">
+          </div>
+          <div class="grid-card grid-card--shoe">
+            <img src="assets/images/Card 3.svg" alt="Blue Shoe" class="grid-card__img">
+          </div>
+
+          <!-- Bottom Row: Items, Girl, Window -->
+          <div class="grid-card grid-card--items">
+            <img src="assets/images/Card 5.svg" alt="Items" class="grid-card__img">
+          </div>
+
+          <div class="grid-card grid-card--girl">
+            <img src="assets/images/Card 4.svg" alt="Girl" class="grid-card__img">
+            <div class="grid-card__overlay">
+          
+            </div>
+          </div>
+
+          <div class="grid-card grid-card--window">
+            <img src="assets/images/Card 2.svg" alt="Window" class="grid-card__img">
+          </div>
+        </div>
+
+        <!-- MOBILE GRID (4-Row Alternating Dual-Peeking Pattern) -->
+        <!-- MOBILE GRID (Exact Organic Staggered Pattern - Unique Assets) -->
+        <div class="hero__grid--mobile mobile-only">
+          <div class="mobile-grid-row m-row-three-columns"> 
+            <!-- Left Column: 2 cards -->
+            <div class="mobile-grid-column m-col-left">
+              <div class="grid-card m-left-card-1">
+                <img src="assets/images/Card 2.svg" alt="Card 2" class="grid-card__img">
+              </div>
+              <div class="grid-card m-left-card-2">
+                <img src="assets/images/Card 7.svg" alt="Card 7" class="grid-card__img">
+              </div>
+            </div>
+
+            <!-- Center Column: 3 cards -->
+            <div class="mobile-grid-column m-col-center">
+              <div class="grid-card m-main-card m-workspace-card">
+                <img src="assets/images/Card 1.svg" alt="Card 1" class="grid-card__img">
+                <div class="grid-card__overlay grid-card__overlay--top-left">
+                  <p class="grid-card__overlay-text">No problems!</p>
+                  <p class="grid-card__overlay-text">Consider it done!!</p>
+                </div>
+              </div>
+              <div class="grid-card m-secondary-card m-plant-card">
+                <img src="assets/images/Card 5.svg" alt="Card 5" class="grid-card__img">
+                <div class="grid-card__caption">Caption here</div>
+              </div>
+              <div class="grid-card m-secondary-card m-process-card-organic">
+                <img src="assets/images/Card 6.svg" alt="Card 6" class="grid-card__img">
+                <div class="grid-card__process-content">
+                  <div class="grid-card__process-title">The Process</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: 2 cards + 1 button -->
+            <div class="mobile-grid-column m-col-right">
+              <div class="grid-card m-right-card-small">
+                <img src="assets/images/Card 4.svg" alt="Card 4" class="grid-card__img">
+              </div>
+              <div class="grid-card m-right-card-large">
+                <img src="assets/images/Card 3.svg" alt="Card 3" class="grid-card__img">
+                <div class="grid-card__overlay m-orange-overlay">
+                  <p class="grid-card__overlay-text">You can see centered text</p>
+                </div>
+              </div>
+              <button class="hero__cta hero__cta--mobile-organic">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="what-we-do">
+    <div class="features__container">
+      <h2 class="features__title">Delivering good designs <span class="features__title-year">since 1954 🚚💨</span></h2>
+      <p class="features__intro">
+        We're the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your layouts,
+        templates and developers to empower all involved.
+      </p>
+      <div class="features__grid">
+        <div class="feature-card feature-card--support">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+         <path
+           d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+         </path>
+         <path d="M15 2a7 7 0 0 1 7 7"></path>
+         <path d="M15 6a3 3 0 0 1 3 3"></path>
+       </svg>
+          </div>
+          <h3 class="feature-card__title">Support</h3>
+          <p class="feature-card__description">
+            Delivering faster and more personalized support with shared screens and cool design systems for Figma.
+          </p>
+          <a href="#" class="feature-card__link">Learn more</a>
+        </div>
+
+        <div class="feature-card feature-card--sales">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Sales growth</h3>
+          <p class="feature-card__description">
+            Identify qualified customers with easy-to-use live chat messaging and AI-based Sales Bot.
+          </p>
+          <a href="#" class="feature-card__link">Learn more</a>
+        </div>
+
+        <div class="feature-card feature-card--components">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Coponents-driven</h3>
+          <p class="feature-card__description">
+            Delivering faster and more personalized support with shared screens and cool design systems for Figma.
+          </p>
+          <a href="#" class="feature-card__link">Learn more</a>
+        </div>
+
+        <div class="feature-card feature-card--swap">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+              </path>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Swap the icon</h3>
+          <p class="feature-card__description">
+            You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter.
+          </p>
+          <a href="#" class="feature-card__link">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="pricing__container">
+      <!-- Desktop View (3 Cards) -->
+      <div class="pricing-view--desktop">
+        <h2 class="pricing__title">Affordable pricing</h2>
+        <div class="pricing__toggle">
+          <h4 class="pricing__toggle-text">Bill me</h4>
+          <h4 class="pricing__toggle-monthly">monthly</h4>
+          <h4 class="pricing__toggle-separator">·</h4>
+          <h4 class="pricing__toggle-yearly">yearly</h4>
+        </div>
+
+        <div class="pricing__grid">
+          <!-- Free Card -->
+          <div class="pricing-card pricing-card--free">
+            <div class="pricing-card__label">Free</div>
+            <div class="pricing-card__price-box">
+              <span class="pricing-card__price-title">Free</span> <span class="pricing-card__price-suffix">/
+                FOREVER</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Components-driven system</li>
+              <li class="pricing-card__feature">Sales-boosting landing pages</li>
+              <li class="pricing-card__feature">Awesome Feather icons pack</li>
+            </ul>
+            <button class="pricing-card__btn-outline">Try for free</button>
+          </div>
+
+          <!-- Individual Card (Featured) -->
+          <div class="featured-card-wrapper">
+            <div class="pricing-card__dots"></div>
+            <div class="pricing-card pricing-card--featured">
+              <div class="pricing-card__header-top">
+                <div class="pricing-card__label"><span class="pricing-card__icon">👤</span> Individual</div>
+                <span class="pricing-card__badge-pill">BEST!</span>
+              </div>
+              <div class="pricing-card__price-box">
+                <span class="pricing-card__price-val">$24</span> <span class="pricing-card__price-suffix">/ MONTH</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">Components-driven system</li>
+                <li class="pricing-card__feature">Sales-boosting landing pages</li>
+                <li class="pricing-card__feature">Awesome Feather icons pack</li>
+                <li class="pricing-card__feature">Themed into 3 different styles</li>
+                <li class="pricing-card__feature">Will help to learn Figma</li>
+              </ul>
+              <button class="pricing-card__btn-solid">Regular license</button>
+            </div>
+          </div>
+
+          <!-- Corporate Card -->
+          <div class="pricing-card pricing-card--corporate">
+            <div class="pricing-card__label"><span class="pricing-card__icon">🏢</span> Corporate</div>
+            <div class="pricing-card__price-box">
+              <span class="pricing-card__price-val">$12</span> <span class="pricing-card__price-suffix">/ EDITOR</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Components-driven system</li>
+              <li class="pricing-card__feature">Sales-boosting landing pages</li>
+              <li class="pricing-card__feature">Awesome Feather icons pack</li>
+              <li class="pricing-card__feature">Themed into 3 different styles</li>
+            </ul>
+            <button class="pricing-card__btn-outline">Extended license</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile View (2 Cards) -->
+      <div class="pricing-view--mobile">
+        <h2 class="pricing-mobile__title">Pricing</h2>
+        <div class="pricing-mobile__toggle">
+          <span>Bill me monthly</span>
+          <span>•</span>
+          <span class="pricing-mobile__toggle-highlight">yearly</span>
+        </div>
+
+        <div class="pricing-mobile__grid">
+          <!-- Individual Mobile Card -->
+          <div class="pricing-mobile__card">
+            <div class="pricing-card__header-top">
+              <div class="pricing-card__label"><span class="pricing-card__icon">👤</span> Individual</div>
+              <span class="pricing-card__badge-pill">FINE!</span>
+            </div>
+            <div class="pricing-card__price-box">
+              <span class="pricing-card__price-val">$8.99</span> <span class="pricing-card__price-suffix">/ MONTH</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Unlimited hosting</li>
+              <li class="pricing-card__feature">Free storage</li>
+              <li class="pricing-card__feature">Lifetime support</li>
+              <li class="pricing-card__feature">Constant updates</li>
+            </ul>
+            <button class="pricing-card__btn-solid">Get started!</button>
+          </div>
+
+          <!-- Professional Mobile Card -->
+          <div class="pricing-mobile__card">
+            <div class="pricing-card__header-top">
+              <div class="pricing-card__label"><span class="pricing-card__icon">🏢</span> Professional</div>
+              <span class="pricing-card__badge-pill">GOOD!</span>
+            </div>
+            <div class="pricing-card__price-box">
+              <span class="pricing-card__price-val">$12.99</span> <span class="pricing-card__price-suffix">/
+                MONTH</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Unlimited hosting</li>
+              <li class="pricing-card__feature">Free storage</li>
+              <li class="pricing-card__feature">Lifetime support</li>
+              <li class="pricing-card__feature">Constant updates</li>
+            </ul>
+            <button class="pricing-card__btn-solid">Select this plan!</button>
+          </div>
+
+          <!-- Enterprise Mobile Card -->
+          <div class="pricing-mobile__card">
+            <div class="pricing-card__header-top">
+              <div class="pricing-card__label"><span class="pricing-card__icon">🚀</span> Enterprise</div>
+              <span class="pricing-card__badge-pill">WOW!</span>
+            </div>
+            <div class="pricing-card__price-box">
+              <span class="pricing-card__price-val">$29.99</span> <span class="pricing-card__price-suffix">/
+                MONTH</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Unlimited hosting</li>
+              <li class="pricing-card__feature">Unlimited storage</li>
+              <li class="pricing-card__feature">Lifetime support</li>
+              <li class="pricing-card__feature">Constant updates</li>
+            </ul>
+            <button class="pricing-card__btn-solid">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__column">
+          <h4 class="footer__heading">FOLLOW US</h4>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link footer__social-link--active" aria-label="Facebook">
+              <img src="assets/images/icon-facebook.svg" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <img src="assets/images/icon-linkedin.svg" alt="LinkedIn" width="40" height="40">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Slack">
+              <img src="assets/images/icon-slack.svg" alt="Slack" width="40" height="40">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <img src="assets/images/icon-twitter.svg" alt="Twitter" width="40" height="40">
+            </a>
+          </div>
+
+          <h4 class="footer__heading">INFORMATION</h4>
+          <div class="footer__info-grid">
+            <ul class="footer__links">
+              <li><a href="#">About Faster app</a></li>
+              <li><a href="#">Get in Touch</a></li>
+              <li><a href="#">Things We Like</a></li>
+            </ul>
+
+            <ul class="footer__links">
+              <li><a href="#">Onhovered/Active</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+
+            <div class="footer__career">
+              <p>We are hiring!</p>
+              <a href="#">Resources</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__column footer__column--right">
+          <h4 class="footer__heading">FOLLOW US</h4>
+          <a href="mailto:hello@fasterapp.com" class="footer__email">hello@fasterapp.com</a>
+
+          <h4 class="footer__heading">KEEP IN TOUCH</h4>
+          <form class="footer__form">
+            <div class="footer__form-row">
+              <div class="footer__form-group">
+                <input type="text" placeholder="Your name" class="footer__input">
+                <span class="footer__form-icon footer__form-icon--user">
+                  <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28 29V27C28 25.9391 27.5786 24.9217 26.8284 24.1716C26.0783 23.4214 25.0609 23 24 23H16C14.9391 23 13.9217 23.4214 13.1716 24.1716C12.4214 24.9217 12 25.9391 12 27V29" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 19C22.2091 19 24 17.2091 24 15C24 12.7909 22.2091 11 20 11C17.7909 11 16 12.7909 16 15C16 17.2091 17.7909 19 20 19Z" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="footer__form-group">
+                <input type="email" placeholder="E-mail" class="footer__input">
+                <span class="footer__form-icon footer__form-icon--mail">
+                  <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12H28C29.1 12 30 12.9 30 14V26C30 27.1 29.1 28 28 28H12C10.9 28 10 27.1 10 26V14C10 12.9 10.9 12 12 12Z" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30 14L20 21L10 14" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="footer__form-row">
+              <div class="footer__form-group footer__form-group--wide">
+                <textarea placeholder="Leave your message" class="footer__textarea"></textarea>
+                <span class="footer__form-icon footer__form-icon--message">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.5 2.5C18.8978 2.10218 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10218 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10218 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <button type="submit" class="footer__submit">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/Wave.svg" alt="Wave" class="footer__wave">
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
