@@ -13,8 +13,8 @@
     "css-grid",
     "bootstrap"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "Jertrude Dimaano",
+  "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
   }
