@@ -17,21 +17,22 @@ async function getAstronomyDetails(city) {
   console.log('json data from API', jsonResponse);
 
   // Extract necessary values from the API response
-  const { name, region, country,} = jsonResponse.location;
+  const { name, region, country, localtime} = jsonResponse.location;
   const { sunrise, sunset, moon_phase, moon_illumination } = jsonResponse.astronomy.astro;
 
   // Display the data
-  displayLocationInfo(name, region, country,);
+  displayLocationInfo(name, region, country,localtime);
   displayAstronomyInfo(sunrise, sunset, moon_phase, moon_illumination);
 }
 
 // Function to display location information
-function displayLocationInfo(city, region, country,) {
+function displayLocationInfo(city, region, country,localtime) {
   const locationDiv = document.getElementById('location-info');
   locationDiv.innerHTML = `
     <h2>${city}</h2>
     <p><strong>Region:</strong> ${region}</p>
     <p><strong>Country:</strong> ${country}</p>
+    <p><strong>Local Time:</strong> ${localtime}</p>
   `;
 }
 
