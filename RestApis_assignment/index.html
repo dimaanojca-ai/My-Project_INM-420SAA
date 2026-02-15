@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>INM 420 Rest API</title>
+</head>
+<body>
+    <header>
+        <h1>Astronomy Data</h1>
+    </header>
+    
+    <main>
+        <section class="location-selector">
+            <label for="city-select">Select a Location:</label>
+            <select id="city-select">
+                <option value="Toronto">Toronto, Canada</option>
+                <option value="Manila">Manila, Philippines</option>
+                <option value="Tokyo">Tokyo, Japan</option>
+                <option value="London">London, UK</option>
+            </select>
+        </section>
+
+        <section class="weather-display">
+            <div id="location-info">
+                <!-- Location data will appear here -->
+            </div>
+            
+            <div id="astronomy-info">
+                <!-- Astronomy data will appear here -->
+            </div>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>

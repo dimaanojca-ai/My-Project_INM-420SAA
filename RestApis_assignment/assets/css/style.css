@@ -1,0 +1,149 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* Main container */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Location selector section */
+.location-selector {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.location-selector label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #667eea;
+}
+
+#city-select {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#city-select:hover {
+    border-color: #764ba2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#city-select:focus {
+    outline: none;
+    border-color: #764ba2;
+}
+
+/* Weather display section */
+.weather-display {
+    background: #172669;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Location info */
+#location-info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+#location-info h2 {
+    color: #7f92e8;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#location-info p {
+    color: #e8d57f;
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Astronomy info */
+#astronomy-info {
+    text-align: center;
+}
+
+#astronomy-info h3 {
+    color: #9a40f4;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#astronomy-info p {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border-left: 4px solid #6980e4;
+}
+
+#astronomy-info p strong {
+    color: #7f92e8;
+    margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .location-selector {
+        padding: 15px;
+    }
+    
+    .location-selector label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .weather-display {
+        padding: 20px;
+    }
+    
+    #location-info h2 {
+        font-size: 1.5rem;
+    }
+}
