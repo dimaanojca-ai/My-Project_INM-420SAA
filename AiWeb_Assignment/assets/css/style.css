@@ -9,7 +9,7 @@
     --navy-mid:    #112236;
     --navy-card:   #0f1e30;
     --accent:      #c8d400;   /* yellow-green dots */
-    --gold:        #e8b84b;   /* section headings  */
+    --gold:        #f0941f;   /* section headings  */
     --text-body:   #d4dce8;
     --text-muted:  #8a9ab0;
     --text-label:  #7a8fa8;
@@ -102,8 +102,8 @@
   }
   
   .persona-name {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
     font-size: clamp(2.4rem, 6vw, 3.5rem);
     color: #ffffff;
     line-height: 1.05;
@@ -112,9 +112,9 @@
   
   .persona-quote {
     margin-top: 0.6rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     font-size: clamp(0.85rem, 2vw, 1rem);
     color: var(--text-muted);
     max-width: 28ch;
@@ -163,9 +163,10 @@
   }
   
   .stat-label {
-    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     font-weight: 400;
-    color: var(--text-label);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-size: 0.75rem;
@@ -212,7 +213,7 @@
   .section-heading {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
-    font-size: 0.82rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--gold);
