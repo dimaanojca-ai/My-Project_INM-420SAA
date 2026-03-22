@@ -1,0 +1,11 @@
+{
+    "name": "tides-tropical-escapes",
+    "version": "1.0.0",
+    "description": "TIDES — Tropical Escapes travel agency website",
+    "scripts": {
+      "start": "lite-server"
+    },
+    "devDependencies": {
+      "lite-server": "^2.6.1"
+    }
+  }

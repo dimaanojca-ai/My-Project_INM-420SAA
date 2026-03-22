@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIDES — Tropical Escapes</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Library 1: AOS (Animate On Scroll) — CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Library 2: Glide.js (Carousel) — CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet" />
+
+    <!-- Library 3: Leaflet (Interactive Map) — CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" rel="stylesheet" />
+
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- ============================================================
+         NAVIGATION — Fixed top navbar with logo and links
+    ============================================================ -->
+    <header>
+      <nav id="navbar">
+        <a href="#" class="nav-logo">tides</a>
+
+        <!-- Desktop navigation links -->
+        <ul class="nav-links">
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#map-section">Map</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#booking" class="nav-book">Book Now</a></li>
+        </ul>
+
+        <!-- Mobile hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile fullscreen menu -->
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <a href="#destinations" class="mobile-link">Destinations</a>
+        <a href="#experiences" class="mobile-link">Experiences</a>
+        <a href="#map-section" class="mobile-link">Map</a>
+        <a href="#packages" class="mobile-link">Packages</a>
+        <a href="#booking" class="mobile-link">Book Now</a>
+      </nav>
+    </header>
+
+    <!-- ============================================================
+         MAIN CONTENT
+    ============================================================ -->
+    <main>
+
+      <!-- ── HERO SECTION ── Full-screen banner with search bar -->
+      <section id="hero">
+        <!-- Background image layer -->
+        <div class="hero-bg"></div>
+        <!-- Dark gradient overlay -->
+        <div class="hero-overlay"></div>
+        <!-- Decorative animated circles -->
+        <div class="hero-circle-1"></div>
+        <div class="hero-circle-2"></div>
+
+        <!-- Hero text content -->
+        <div class="hero-content">
+          <span class="hero-tag">Summer 2026 · Limited Spots</span>
+
+          <h1 class="hero-title">
+            Ride the<br>
+            <span class="pop">Tides</span> of<br>
+            Paradise
+          </h1>
+
+          <p class="hero-sub">
+            Sun-drenched shores, emerald waters, and unforgettable adventures —
+            your perfect tropical escape starts here.
+          </p>
+
+          <!-- Call-to-action buttons -->
+          <div class="hero-btns">
+            <a href="#destinations" class="btn btn-mango">Explore Destinations</a>
+            <a href="#packages" class="btn btn-ghost">View Packages</a>
+          </div>
+
+          <!-- Inline search bar -->
+          <div class="hero-search">
+            <div class="search-field">
+              <label for="search-where">Where to?</label>
+              <input id="search-where" type="text" placeholder="Bali, Maldives, Santorini…" />
+            </div>
+            <div class="search-field">
+              <label for="search-depart">Departure</label>
+              <input id="search-depart" type="date" />
+            </div>
+            <div class="search-field">
+              <label for="search-return">Return</label>
+              <input id="search-return" type="date" />
+            </div>
+            <div class="search-field">
+              <label for="search-travelers">Travelers</label>
+              <select id="search-travelers">
+                <option>1 person</option>
+                <option>2 people</option>
+                <option>3–5 people</option>
+                <option>6+ people</option>
+              </select>
+            </div>
+            <button class="search-btn">Search Trips</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── STATS RIBBON ── Key numbers about Tides -->
+      <section class="stats-ribbon" aria-label="Company statistics">
+        <div class="stat" data-aos="fade-up" data-aos-delay="0">
+          <div class="stat-num" data-count="84">0</div>
+          <div class="stat-lbl">Countries</div>
+        </div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="80">
+          <div class="stat-num" data-count="15200">0</div>
+          <div class="stat-lbl">Happy Travelers</div>
+        </div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="160">
+          <div class="stat-num" data-count="350">0</div>
+          <div class="stat-lbl">Packages</div>
+        </div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="240">
+          <div class="stat-num" data-count="98">0</div>
+          <div class="stat-lbl">Satisfaction</div>
+        </div>
+      </section>
+
+      <!-- ── TAGLINE BAR ── -->
+      <aside class="tagline-bar">
+        <span class="tagline-item">Trusted by 15,000+ travelers worldwide</span>
+        <span class="tagline-divider">|</span>
+        <span class="tagline-item">Handpicked destinations in 84 countries</span>
+        <span class="tagline-divider">|</span>
+        <span class="tagline-item">Award-winning travel experiences since 2010</span>
+        <span class="tagline-divider">|</span>
+        <span class="tagline-item">98% customer satisfaction rate</span>
+      </aside>
+
+      <!-- ── DESTINATIONS SECTION ── Bento grid of top destinations -->
+      <section id="destinations" class="section">
+        <div class="container">
+
+          <!-- Section header -->
+          <div data-aos="fade-up">
+            <span class="eyebrow">Where to next?</span>
+            <h2 class="section-title">Top Tropical<br>Destinations</h2>
+            <p class="section-sub">
+              From jaw-dropping rice terraces to crystal-clear lagoons — the world is calling.
+            </p>
+          </div>
+
+          <!-- Bento grid layout -->
+          <div class="bento">
+
+            <!-- Bali — large feature card -->
+            <article class="bento-card" data-aos="fade-up" data-aos-delay="0">
+              <img src="assets/images/bali.jpg" alt="Terraced rice fields in Bali, Indonesia" loading="lazy" />
+              <div class="bento-overlay">
+                <div class="bento-flag">🇮🇩</div>
+                <div class="bento-name">Bali, Indonesia</div>
+                <div class="bento-sub">From $1,650 · 7–14 nights</div>
+                <a href="#booking" class="bento-btn">Book Now</a>
+              </div>
+            </article>
+
+            <!-- Maldives -->
+            <article class="bento-card" data-aos="fade-up" data-aos-delay="60">
+              <img src="assets/images/maldives.jpg" alt="Crystal clear waters of the Maldives" loading="lazy" />
+              <div class="bento-overlay">
+                <div class="bento-flag">🇲🇻</div>
+                <div class="bento-name">Maldives</div>
+                <div class="bento-sub">From $4,200 · 5–10 nights</div>
+                <a href="#booking" class="bento-btn">Book Now</a>
+              </div>
+            </article>
+
+            <!-- Santorini -->
+            <article class="bento-card" data-aos="fade-up" data-aos-delay="120">
+              <img src="assets/images/santorini.jpg" alt="White-washed buildings overlooking the sea in Santorini" loading="lazy" />
+              <div class="bento-overlay">
+                <div class="bento-flag">🇬🇷</div>
+                <div class="bento-name">Santorini</div>
+                <div class="bento-sub">From $2,890 · 5–7 nights</div>
+                <a href="#booking" class="bento-btn">Book Now</a>
+              </div>
+            </article>
+
+            <!-- Kyoto -->
+            <article class="bento-card" data-aos="fade-up" data-aos-delay="180">
+              <img src="assets/images/kyoto.jpg" alt="Traditional temples and cherry blossoms in Kyoto" loading="lazy" />
+              <div class="bento-overlay">
+                <div class="bento-flag">🇯🇵</div>
+                <div class="bento-name">Kyoto</div>
+                <div class="bento-sub">From $3,100 · 7–10 nights</div>
+                <a href="#booking" class="bento-btn">Book Now</a>
+              </div>
+            </article>
+
+            <!-- Amalfi Coast -->
+            <article class="bento-card" data-aos="fade-up" data-aos-delay="240">
+              <img src="assets/images/amalfi.jpg" alt="Colourful cliffside villages of the Amalfi Coast" loading="lazy" />
+              <div class="bento-overlay">
+                <div class="bento-flag">🇮🇹</div>
+                <div class="bento-name">Amalfi Coast</div>
+                <div class="bento-sub">From $2,450 · 5–8 nights</div>
+                <a href="#booking" class="bento-btn">Book Now</a>
+              </div>
+            </article>
+
+          </div><!-- end .bento -->
+        </div><!-- end .container -->
+      </section>
+
+      <!-- ── EXPERIENCES SECTION ── Glide.js carousel -->
+      <section id="experiences" class="section">
+        <div class="container">
+
+          <!-- Sidebar text -->
+          <div class="exp-sidebar" data-aos="fade-up">
+            <span class="eyebrow">Live it fully</span>
+            <h2 class="section-title">Signature<br>Experiences</h2>
+            <p class="section-sub">
+              From reef dives to mountain treks — adventures that change you.
+            </p>
+          </div>
+
+          <!-- Glide.js carousel wrapper -->
+          <div class="glide" id="expGlide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+
+                <!-- Slide 1: Reef Diving -->
+                <li class="glide__slide">
+                  <div class="exp-slide">
+                    <img src="assets/images/reef.jpg" alt="Colorful coral reef diving in the Great Barrier Reef" />
+                    <div class="exp-slide-info">
+                      <span class="exp-slide-badge">Ocean</span>
+                      <h3>Great Barrier Reef Dive</h3>
+                      <p>Australia · 8 days of underwater wonder · From $2,100</p>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Slide 2: Safari -->
+                <li class="glide__slide">
+                  <div class="exp-slide">
+                    <img src="assets/images/safari.jpg" alt="Lions on the Serengeti plains at sunset" />
+                    <div class="exp-slide-info">
+                      <span class="exp-slide-badge">Wildlife</span>
+                      <h3>Serengeti Private Safari</h3>
+                      <p>Tanzania · Witness the Great Migration · From $4,800</p>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Slide 3: Alps Trek -->
+                <li class="glide__slide">
+                  <div class="exp-slide">
+                    <img src="assets/images/alps.jpg" alt="Snow-capped Swiss Alps mountain peaks" />
+                    <div class="exp-slide-info">
+                      <span class="exp-slide-badge">Adventure</span>
+                      <h3>Swiss Alpine Trek</h3>
+                      <p>Switzerland · 10 days of peak scenery · From $3,200</p>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Slide 4: Northern Lights -->
+                <li class="glide__slide">
+                  <div class="exp-slide">
+                    <img src="assets/images/aurora.jpg" alt="Northern lights over Iceland" />
+                    <div class="exp-slide-info">
+                      <span class="exp-slide-badge">Lights</span>
+                      <h3>Aurora Borealis Retreat</h3>
+                      <p>Iceland · 6 nights of Northern Lights · From $2,900</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Prev/Next arrows -->
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left exp-btn" data-glide-dir="<" aria-label="Previous">←</button>
+              <button class="glide__arrow glide__arrow--right exp-btn" data-glide-dir=">" aria-label="Next">→</button>
+            </div>
+
+            <!-- Dot navigation -->
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0" aria-label="Slide 1"></button>
+              <button class="glide__bullet" data-glide-dir="=1" aria-label="Slide 2"></button>
+              <button class="glide__bullet" data-glide-dir="=2" aria-label="Slide 3"></button>
+              <button class="glide__bullet" data-glide-dir="=3" aria-label="Slide 4"></button>
+            </div>
+          </div><!-- end #expGlide -->
+
+        </div><!-- end .container -->
+      </section>
+
+      <!-- ── MAP SECTION ── Leaflet.js interactive map -->
+      <section id="map-section" class="section">
+        <div class="container">
+
+          <!-- Section header -->
+          <div data-aos="fade-up" style="margin-bottom:2.5rem;">
+            <span class="eyebrow">Explore</span>
+            <h2 class="section-title">We Go Everywhere<br>You Dream Of</h2>
+          </div>
+
+          <div class="map-layout">
+            <!-- Leaflet map renders here -->
+            <div id="travel-map" data-aos="fade-right" aria-label="Interactive destination map"></div>
+
+            <!-- Clickable destination list beside the map -->
+            <aside class="map-panel" data-aos="fade-left">
+              <p class="map-hint">Tap a destination to zoom in 👇</p>
+              <div id="mapItems"></div>
+            </aside>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── CLIMATE SECTION ── Chart.js bar + line chart -->
+      <section id="climate" class="section">
+        <div class="container climate-inner">
+
+          <!-- Left: text and info cards -->
+          <div class="climate-left" data-aos="fade-right">
+            <span class="eyebrow">Plan smart</span>
+            <h2 class="section-title">Best Time<br>to Visit</h2>
+            <p class="section-sub">
+              Our month-by-month guide helps you catch the perfect wave.
+            </p>
+
+            <!-- Season highlight cards -->
+            <div class="climate-fun-cards">
+              <div class="climate-fun-card">
+                <div class="cfc-icon"></div>
+                <div>
+                  <div class="cfc-title">Beach Season</div>
+                  <div class="cfc-sub">Bali: April – October</div>
+                </div>
+              </div>
+              <div class="climate-fun-card">
+                <div class="cfc-icon"></div>
+                <div>
+                  <div class="cfc-title">Surf Season</div>
+                  <div class="cfc-sub">Maldives: November – April</div>
+                </div>
+              </div>
+              <div class="climate-fun-card">
+                <div class="cfc-icon"></div>
+                <div>
+                  <div class="cfc-title">Cherry Blossom</div>
+                  <div class="cfc-sub">Japan: March – May</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Chart.js canvas -->
+          <div class="chart-card" data-aos="fade-left">
+            <p class="chart-label">Bali — Monthly Temperature & Sunshine Hours</p>
+            <canvas id="climateChart" aria-label="Bali climate chart"></canvas>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── PACKAGES SECTION ── Three travel package tiers -->
+      <section id="packages" class="section">
+        <div class="container">
+
+          <!-- Section header -->
+          <div data-aos="fade-up">
+            <span class="eyebrow">Find your vibe</span>
+            <h2 class="section-title">Travel Packages<br>for Every Style</h2>
+            <p class="section-sub">
+              Budget explorer or luxury seeker — we've got your perfect trip.
+            </p>
+          </div>
+
+          <div class="pkg-grid">
+
+            <!-- Package 1: The Wanderer -->
+            <article class="pkg-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="pkg-img">
+                <img src="assets/images/pkg-wanderer.jpg" alt="Group of travelers exploring a scenic destination" loading="lazy" />
+                <span class="pkg-badge">Explorer</span>
+              </div>
+              <div class="pkg-body">
+                <span class="pkg-tier">Budget Friendly</span>
+                <h3 class="pkg-name">The Wanderer</h3>
+                <p class="pkg-desc">
+                  Group tours to iconic destinations. Perfect for solo travelers
+                  craving community, discovery, and unforgettable memories on a budget.
+                </p>
+                <div class="pkg-tags">
+                  <span class="pkg-tag">7 nights</span>
+                  <span class="pkg-tag">Group tour</span>
+                  <span class="pkg-tag">Guided</span>
+                  <span class="pkg-tag">Meals included</span>
+                </div>
+                <div class="pkg-price">$1,490 <small>/ person</small></div>
+                <a href="#booking" class="btn btn-aqua">View Package</a>
+              </div>
+            </article>
+
+            <!-- Package 2: The Connoisseur (featured) -->
+            <article class="pkg-card featured" data-aos="fade-up" data-aos-delay="100">
+              <div class="pkg-img">
+                <img src="assets/images/pkg-connoisseur.jpg" alt="Luxury boutique hotel pool overlooking mountains" loading="lazy" />
+                <span class="pkg-badge">Most Popular</span>
+              </div>
+              <div class="pkg-body">
+                <span class="pkg-tier">Best Value</span>
+                <h3 class="pkg-name">The Connoisseur</h3>
+                <p class="pkg-desc">
+                  Semi-private journeys combining boutique hotels, extraordinary
+                  culinary experiences, and expert local guides at every step.
+                </p>
+                <div class="pkg-tags">
+                  <span class="pkg-tag">10 nights</span>
+                  <span class="pkg-tag">Semi-private</span>
+                  <span class="pkg-tag">Fine dining</span>
+                  <span class="pkg-tag">Transfers</span>
+                </div>
+                <div class="pkg-price">$3,800 <small>/ person</small></div>
+                <a href="#booking" class="btn btn-mango">Book Now</a>
+              </div>
+            </article>
+
+            <!-- Package 3: The Virtuoso -->
+            <article class="pkg-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="pkg-img">
+                <img src="assets/images/pkg-luxury.jpg" alt="Private overwater villa in a tropical destination" loading="lazy" />
+                <span class="pkg-badge">Luxury</span>
+              </div>
+              <div class="pkg-body">
+                <span class="pkg-tier">White Glove</span>
+                <h3 class="pkg-name">The Virtuoso</h3>
+                <p class="pkg-desc">
+                  Fully private, bespoke journeys crafted around your vision.
+                  Private jets, villa rentals, and exclusive access to the world's
+                  hidden gems.
+                </p>
+                <div class="pkg-tags">
+                  <span class="pkg-tag">Custom length</span>
+                  <span class="pkg-tag">Private jet</span>
+                  <span class="pkg-tag">Villa stays</span>
+                  <span class="pkg-tag">24/7 concierge</span>
+                </div>
+                <div class="pkg-price">$12,000+ <small>/ person</small></div>
+                <a href="#booking" class="btn btn-aqua">Enquire Now</a>
+              </div>
+            </article>
+
+          </div><!-- end .pkg-grid -->
+        </div><!-- end .container -->
+      </section>
+
+      <!-- ── BOOKING SECTION ── Enquiry form -->
+      <section id="booking" class="section">
+        <div class="booking-blob-1"></div>
+        <div class="booking-blob-2"></div>
+
+        <div class="container booking-inner">
+
+          <!-- Left: heading and trust points -->
+          <div class="booking-left" data-aos="fade-right">
+            <h2>Let's Build Your<br>Dream Trip!</h2>
+            <p>
+              Tell us where you want to go and our experts will craft your
+              perfect itinerary in 48 hours — no obligation, no hidden fees.
+            </p>
+            <ul class="trust-badges">
+              <li class="trust-badge"><span>&#10003;</span> Free personalised itinerary</li>
+              <li class="trust-badge"><span>&#10003;</span> Secure, no-obligation booking</li>
+              <li class="trust-badge"><span>&#10003;</span> Response within 48 hours</li>
+              <li class="trust-badge"><span>&#10003;</span> 4.9/5 from 12,000+ travelers</li>
+            </ul>
+          </div>
+
+          <!-- Right: booking form -->
+          <div class="booking-form" data-aos="fade-left">
+            <p class="form-head">Plan My Escape </p>
+
+            <div class="form-group">
+              <label class="form-label" for="nameInput">Your Name</label>
+              <input class="form-input" type="text" id="nameInput" placeholder="First & Last Name" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="emailInput">Email Address</label>
+              <input class="form-input" type="email" id="emailInput" placeholder="you@email.com" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="destSelect">Dream Destination</label>
+                <select class="form-select" id="destSelect">
+                  <option value="">Choose one...</option>
+                  <option>Bali, Indonesia</option>
+                  <option>Maldives</option>
+                  <option>Santorini, Greece</option>
+                  <option>Kyoto, Japan</option>
+                  <option>Amalfi Coast, Italy</option>
+                  <option>Patagonia, Argentina</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="travSelect">Travelers</label>
+                <select class="form-select" id="travSelect">
+                  <option>1 person</option>
+                  <option>2 people</option>
+                  <option>3–5 people</option>
+                  <option>6+ people</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dateInput">Departure Date</label>
+              <input class="form-input" type="date" id="dateInput" />
+            </div>
+
+            <button class="btn btn-mango btn-full" onclick="handleBooking()">
+              Send My Request
+            </button>
+
+            <!-- Form feedback message -->
+            <div id="formMsg" role="alert"></div>
+          </div><!-- end .booking-form -->
+
+        </div><!-- end .booking-inner -->
+      </section>
+
+      <!-- ── TESTIMONIALS SECTION ── Customer reviews -->
+      <section id="testimonials" class="section">
+        <div class="container">
+
+          <div data-aos="fade-up">
+            <span class="eyebrow eyebrow-light">Happy campers</span>
+            <h2 class="section-title section-title-light">Travelers Love<br>Tides</h2>
+          </div>
+
+          <div class="testi-grid">
+
+            <!-- Review 1 -->
+            <article class="testi-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="testi-stars">★★★★★</div>
+              <blockquote class="testi-quote">
+                "Tides turned our anniversary into something completely magical.
+                The overwater villa in Maldives, the private snorkeling at sunrise
+                — absolutely breathtaking."
+              </blockquote>
+              <div class="testi-author">
+                <img class="testi-avatar" src="assets/images/testimonial-1.jpg" alt="Emma and Jake" />
+                <div>
+                  <div class="testi-name">Emma & Jake</div>
+                  <div class="testi-loc">Sydney, Australia</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 2 -->
+            <article class="testi-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="testi-stars">★★★★★</div>
+              <blockquote class="testi-quote">
+                "The Bali trip was beyond anything I expected. The temple tours,
+                the rice terrace hike, the cooking class — it felt totally
+                authentic, not touristy at all."
+              </blockquote>
+              <div class="testi-author">
+                <img class="testi-avatar" src="assets/images/testimonial-2.jpg" alt="Marco D." />
+                <div>
+                  <div class="testi-name">Marco D.</div>
+                  <div class="testi-loc">Milan, Italy</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="testi-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="testi-stars">★★★★★</div>
+              <blockquote class="testi-quote">
+                "I've traveled a lot, but Santorini through Tides was something
+                else. The private sunset sailing trip and cliffside dinner —
+                I'm still dreaming about the view."
+              </blockquote>
+              <div class="testi-author">
+                <img class="testi-avatar" src="assets/images/testimonial-3.jpg" alt="Aisha K." />
+                <div>
+                  <div class="testi-name">Aisha K.</div>
+                  <div class="testi-loc">Dubai, UAE</div>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- end .testi-grid -->
+        </div><!-- end .container -->
+      </section>
+
+    </main><!-- end main -->
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer>
+      <div class="footer-top">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <div class="footer-logo">tides</div>
+          <p>
+            Sun-soaked adventures crafted since 2009. IATA certified,
+            award-winning tropical travel specialists with 15,000+ happy
+            explorers worldwide.
+          </p>
+        </div>
+
+        <!-- Destinations links -->
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#">Southeast Asia</a></li>
+            <li><a href="#">Mediterranean</a></li>
+            <li><a href="#">Indian Ocean</a></li>
+            <li><a href="#">Caribbean</a></li>
+            <li><a href="#">Pacific Islands</a></li>
+          </ul>
+        </div>
+
+        <!-- Services links -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Group Tours</a></li>
+            <li><a href="#">Honeymoons</a></li>
+            <li><a href="#">Family Trips</a></li>
+            <li><a href="#">Luxury Bespoke</a></li>
+            <li><a href="#">Solo Travel</a></li>
+          </ul>
+        </div>
+
+        <!-- Company links -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+      </div><!-- end .footer-top -->
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2026 Tides Travel Co. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><img src="assets/images/icon-instagram.svg" alt="Instagram" width="24" height="24"></a>
+          <a href="#" aria-label="TikTok"><img src="assets/images/icon-tiktok.svg" alt="TikTok" width="24" height="24"></a>
+          <a href="#" aria-label="Pinterest"><img src="assets/images/icon-pinterest.svg" alt="Pinterest" width="24" height="24"></a>
+          <a href="#" aria-label="YouTube"><img src="assets/images/icon-youtube.svg" alt="YouTube" width="24" height="24"></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+         THIRD-PARTY LIBRARY SCRIPTS (loaded before our own script)
+    ============================================================ -->
+
+    <!-- Library 1: AOS — Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Library 2: Glide.js — Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+
+    <!-- Library 3: Leaflet — Interactive Map -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+    <!-- Library 4: Chart.js — Climate Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+
+    <!-- Our external JavaScript file (must come AFTER the libraries above) -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
