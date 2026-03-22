@@ -1,6 +1,5 @@
 {
-    "server": {
-      "baseDir": "./"
-    }
+  "server": {
+    "baseDir": "./AiWeb_Assignment"
   }
-  
+}
