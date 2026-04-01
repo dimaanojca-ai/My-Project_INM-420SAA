@@ -1,0 +1,11 @@
+{
+  "name": "bulma-cafe",
+  "version": "1.0.0",
+  "description": "Self-Learning Project — Café Website built with Bulma CSS",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

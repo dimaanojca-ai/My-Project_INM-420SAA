@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sip & Stay — Café</title>
+
+    <!-- Bulma CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item logo" href="#">Sip & Stay</a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#home">Home</a>
+            <a class="navbar-item" href="#menu">Menu</a>
+            <a class="navbar-item" href="#about">About</a>
+            <a class="navbar-item" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero is-fullheight hero-bg" id="home">
+      <div class="hero-body">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-tag">Est. 2018</p>
+            <h1 class="hero-title">Brewed to<br/>Perfection</h1>
+            <p class="hero-subtitle">Handcrafted coffee, fresh pastries,<br/>and a cozy place to stay a while.</p>
+            <a href="#menu" class="button hero-btn">View Our Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED DRINKS -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="has-text-centered mb-6">
+          <h2 class="section-title">Our Menu</h2>
+          <p class="section-sub">Made fresh daily with locally sourced ingredients</p>
+        </div>
+
+        <div class="columns is-multiline">
+
+          <!-- Card 1 -->
+          <div class="column is-one-third">
+            <div class="card menu-card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="images/espresso.jpg" alt="Espresso" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="card-title">Espresso Masterclass</p>
+                <p class="card-desc">Rich, bold, and perfectly extracted every time.</p>
+                <p class="card-price">$4.50</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="column is-one-third">
+            <div class="card menu-card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="images/icedcoffee.jpg" alt="Latte" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="card-title">Iced Sunrise Latte</p>
+                <p class="card-desc">Smooth espresso over ice with vanilla cold foam.</p>
+                <p class="card-price">$6.00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="column is-one-third">
+            <div class="card menu-card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="images/organic.jpg" alt="Organic Brew" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="card-title">Organic Brew</p>
+                <p class="card-desc">Single origin, ethically sourced, slow brewed.</p>
+                <p class="card-price">$5.00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="column is-one-third">
+            <div class="card menu-card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="images/latteart.jpg" alt="Latte Art" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="card-title">Latte Art Special</p>
+                <p class="card-desc">Silky steamed milk with intricate latte art.</p>
+                <p class="card-price">$5.50</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="column is-one-third">
+            <div class="card menu-card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="images/pastries.jpg" alt="Pastries" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="card-title">Fresh Pastries</p>
+                <p class="card-desc">Baked in-house every morning, warm and flaky.</p>
+                <p class="card-price">$4.00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="column is-one-third">
+            <div class="card menu-card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="images/coldbrew.jpg" alt="Cold Brew" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="card-title">Daily Cold Brew</p>
+                <p class="card-desc">Steeped for 24 hours, smooth and refreshing.</p>
+                <p class="card-price">$5.50</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <figure class="image about-img">
+              <img src="images/about.jpg" alt="Our Café" />
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-1">
+            <h2 class="section-title">Our Story</h2>
+            <p class="about-text">Sip & Stay started as a small corner café with one big dream — to create a space where people slow down, connect, and enjoy really good coffee. We source our beans ethically from small farms, and bake everything fresh in-house every single morning.</p>
+            <p class="about-text mt-4">Whether you're here for a quick espresso or a slow afternoon with a book, you're always welcome to stay a while.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer class="footer-section" id="contact">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-4">
+            <p class="footer-logo">Sip & Stay</p>
+            <p class="footer-tagline">Where every cup tells a story.</p>
+          </div>
+          <div class="column is-3">
+            <p class="footer-heading">Visit Us</p>
+            <p class="footer-text">123 Maple Street<br/>Toronto, ON M5V 1A1</p>
+          </div>
+          <div class="column is-3">
+            <p class="footer-heading">Hours</p>
+            <p class="footer-text">Mon–Fri: 7am – 6pm<br/>Sat–Sun: 8am – 5pm</p>
+          </div>
+          <div class="column is-2">
+            <p class="footer-heading">Contact</p>
+            <p class="footer-text">hello@sipandstay.ca<br/>(416) 555-0198</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Sip & Stay. Built with Bulma CSS.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
